@@ -26,3 +26,6 @@ bundle
 </pre>
 
 No warranty provided that this won't completely b0rk your lastpass repo. You've been warned.
+
+TODO:
+* Add search function
