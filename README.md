@@ -29,3 +29,4 @@ No warranty provided that this won't completely b0rk your lastpass repo. You've 
 
 TODO:
 * Add search function
+* auto-magically start server on execution if it's not running
