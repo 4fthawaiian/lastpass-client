@@ -9,13 +9,15 @@ Install:
 
 @@@
 echo "username=MYLASTPASSUSERNAME" >> ~/.lprc
-echo "password=MYLASTPASSPASSWORD" >> ~/.lprc
-@@@
 
-git clone <LASTPASS-CLIENT-REPO>
+echo "password=MYLASTPASSPASSWORD" >> ~/.lprc
+
+git clone LASTPASS-CLIENT-REPO
 
 lastpass-client/lp.rb & # starts the server
+
 lastpass-client/lp.rb NAME_OF_RESOURCE_YOU_WANT
+
 @@@
 
 No warranty provided that this won't completely b0rk your lastpass repo. You've been warned.
