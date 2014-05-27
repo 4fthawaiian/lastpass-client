@@ -13,7 +13,7 @@ echo "username=MYLASTPASSUSERNAME" >> ~/.lprc
 
 echo "password=MYLASTPASSPASSWORD" >> ~/.lprc
 
-git clone LASTPASS-CLIENT-REPO
+git clone git@github.com:4fthawaiian/lastpass-client.git
 
 lastpass-client/lp.rb & # starts the server
 
