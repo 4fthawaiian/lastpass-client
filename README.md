@@ -8,6 +8,7 @@ Features: Not a lot. You run the script with no arguments to start the server, a
 Install:
 
 @@@
+
 echo "username=MYLASTPASSUSERNAME" >> ~/.lprc
 
 echo "password=MYLASTPASSPASSWORD" >> ~/.lprc
