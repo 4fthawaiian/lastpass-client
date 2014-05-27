@@ -7,7 +7,7 @@ Features: Not a lot. You run the script with no arguments to start the server, a
 
 Install:
 
-@@@
+<pre>
 
 echo "username=MYLASTPASSUSERNAME" >> ~/.lprc
 
@@ -19,6 +19,6 @@ lastpass-client/lp.rb & # starts the server
 
 lastpass-client/lp.rb NAME_OF_RESOURCE_YOU_WANT
 
-@@@
+</pre>
 
 No warranty provided that this won't completely b0rk your lastpass repo. You've been warned.
