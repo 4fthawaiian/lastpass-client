@@ -37,8 +37,6 @@ def getByUrlFromDaemon (url)
   print response         # And display it
 end
 
-begin
-
 def startServer
   init_vault
   sock = UDPSocket.new
@@ -51,15 +49,20 @@ def startServer
   end
 end
 
-if ARGV.length > 0
-  urlToSearch = ARGV.first.chomp
-  #puts getByURL(urlToSearch).first.password
-  puts getByUrlFromDaemon(urlToSearch)
-  #getByURL(urlToSearch).each{|res| print res.name," ",res.password, "\n"}
-else
-  startServer
+begin
+
+  if ARGV.length > 0
+    urlToSearch = ARGV.first.chomp
+    #puts getByURL(urlToSearch).first.password
+    puts getByUrlFromDaemon(urlToSearch)
+    #getByURL(urlToSearch).each{|res| print res.name," ",res.password, "\n"}
+  else
+    startServer
+  end
+
+rescue Errno::EADDRINUSE => e
+
+  puts "Server already running. Run this script with an argument to find a password"
+
 end
 
-rescue Exception => e
-  puts "hahahahah: "+e.to_s
-end
