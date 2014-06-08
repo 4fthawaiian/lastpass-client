@@ -7,7 +7,7 @@ Features: Not a lot. You run the script with no arguments to start the server, a
 
 Install:
 
-@@@
+<pre>
 
 echo "username=MYLASTPASSUSERNAME" >> ~/.lprc
 
@@ -15,10 +15,18 @@ echo "password=MYLASTPASSPASSWORD" >> ~/.lprc
 
 git clone git@github.com:4fthawaiian/lastpass-client.git
 
-lastpass-client/lp.rb & # starts the server
+cd lastpass-client
+&lt;gem install bundler&gt;
+bundle
 
-lastpass-client/lp.rb NAME_OF_RESOURCE_YOU_WANT
+./lp.rb & # starts the server
 
-@@@
+./lp.rb NAME_OF_RESOURCE_YOU_WANT
+
+</pre>
 
 No warranty provided that this won't completely b0rk your lastpass repo. You've been warned.
+
+TODO:
+* Add search function
+* auto-magically start server on execution if it's not running
